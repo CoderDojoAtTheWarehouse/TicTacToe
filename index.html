@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="resetGame()">
+    <h1>Tic Tac Toe</h1>
+    <table id="board">
+      <tr><td id="0_0" onclick="makeMove(0,0)"></td><td id="1_0" onclick="makeMove(1,0)"></td><td id="2_0" onclick="makeMove(2,0)"></td></tr>
+      <tr><td id="0_1" onclick="makeMove(0,1)"></td><td id="1_1" onclick="makeMove(1,1)"></td><td id="2_1" onclick="makeMove(2,1)"></td></tr>
+      <tr><td id="0_2" onclick="makeMove(0,2)"></td><td id="1_2" onclick="makeMove(1,2)"></td><td id="2_2" onclick="makeMove(2,2)"></td></tr>
+    </table>
+    <div id="result"></div>
+    <a href="#" onclick="resetGame()">Restart Game</a>
+  </body>
+
+</html>
