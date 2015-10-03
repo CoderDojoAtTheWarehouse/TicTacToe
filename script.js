@@ -35,6 +35,9 @@ function makeMove(col, row) {
       winner = player;
     }
     turn++;
+    if (turn === 9 && !winner) {
+      document.getElementById('result').innerHTML = 'The game is deadlocked';
+    }
   }
 }
 
